@@ -31,7 +31,7 @@ To solve this Captcha, I used the open cv to remove some of the noises first and
 1. I tried to detect the large straight line in the Captcha and use inverse mask to remove it using Open CV's hough line function. During my testing, it requires around 3px thick lines to mask it out. which also cross out quite a large portion of the characters. After testing on both the masked and unmasked version of Captcha on the Keras model, it seems the Keras model has a better learning rate and smaller loss for the unmasked version. So the final version didn't mask out the large straight line
 
 # Keras Model:
-I found many Keras model online and eventually came into a Keras model that was originally used to solve a simplier Captcha (Reference below). After briefly reviewing the codes, I found it also useful in my case.
+I found many Keras model online and eventually came into a Keras model that was originally used to solve a simplier Captcha (https://keras.io/examples/vision/captcha_ocr/). After briefly reviewing the codes, I found it also useful in my case.
 
 I changed some of the variables and feed my training set of Captcha images to it (1000 images in the final version)
 
