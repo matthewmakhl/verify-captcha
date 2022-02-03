@@ -1,5 +1,5 @@
 # Introduction
-This project aim to verify the rather complicated captcha while signing into a government website (Not to specify which government here)
+This project aim to verify the rather complicated captcha while signing into a website that I wanted to scrap information from.
 
 Difficulties in verifying this captcha
 - Images with various size
